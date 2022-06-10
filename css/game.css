@@ -1,0 +1,210 @@
+.game {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "chat board game-data";
+    width: 100%;
+    height: fit-content;
+    padding: 5rem;
+}
+
+.board {
+    grid-area: "board";
+}
+
+.chat {
+    grid-area: "chat";
+}
+
+.game-data {
+    grid-area: "game-data";
+}
+
+@media screen and (max-width: 1200px) {
+    .game {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "chat" 
+            "board" 
+            "game-data";
+        justify-content: center;
+        height: fit-content;
+        width: 700px;
+    }
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    height: 700px;
+    background-color: #ff0;
+    vertical-align: stretch;
+}
+
+#messages {
+    height: 100%;
+    width: 100%;
+    background-color: #f0f;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.message {
+    border-bottom: 1px solid #000;
+}
+
+.timestamp {
+    margin-right: 0.5rem;
+}
+
+.sender {
+    margin-right: 1rem;
+}
+
+.sender::after {
+    content: ":";
+}
+
+#message-box {
+    margin-right: 1rem;
+    width: 100%;
+    resize: none;
+    overflow-y: auto;
+}
+
+.message-send {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.board {
+    display: flex;
+    height: 700px;
+    width: 700px;
+    justify-self: center;
+}
+
+#board {
+    width: 100%;
+    height: 100%;
+}
+
+.game-data {
+    display: flex;
+    flex-direction: column;
+    max-height: 700px;
+}
+
+.opponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100px;
+    width: 100%;
+    background-color: #0f0;
+    border: 1px solid #000;
+    padding: 1rem;
+}
+
+.player-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.player-info img {
+    border-radius: 2rem;
+    width: auto;
+    max-height: 70%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-info p {
+    margin: 0 0.5rem;
+}
+
+.timer {
+    align-self: center;
+    background-color: #00f;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.timer::before {
+    content: '⏱';
+}
+
+.history {
+    flex-grow: 1;
+    width: 100%;
+    background-color: #fa0;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+th:nth-child(1) {
+    width: 20%;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100px;
+    width: 100%;
+    background-color: #0f0;
+    border: 1px solid #000;
+    padding: 1rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-info p {
+    margin: 0 0.5rem;
+}
+
+.timer {
+    background-color: #00f;
+    font-weight: bold;
+    align-self: center;
+    font-size: 18pt;
+}
+
+.timer::before {
+    content: '⏱';
+}
+
+.game-data-button {
+    display: flex;
+    justify-self: flex-end;
+    width: fit-content;
+}

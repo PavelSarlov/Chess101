@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Account - User Data</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/global.css" />
+        <link rel="stylesheet" href="../css/game.css" />
+    </head>
+    <body>
+        <header>
+            <a href="../html/frontPage.html" class="logo">
+                <img src="../img/logo.png" alt="Chess 101" />
+            </a>
+            <div class="rightSide">
+                <div class="profile">
+                    <a href="../html/user-data.html" class="logo">
+                        <img src="../img/profile.png" alt="Profile" />
+                    </a>
+                    <span>PROFILE</span>
+                </div>
+                <div class="logout">
+                    <a href="../html/login.html" class="logo">
+                        <img src="../img/logout.png" alt="Log out" />
+                    </a>
+                    <span>LOGOUT</span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="game">
+                <section class="chat">
+                    <h1>CHAT</h1>
+                    <section id="messages">
+                        <div class="message">
+                            <span class="timestamp">[16:43:02]</span>
+                            <span class="sender">Opponent</span>
+                            <span class="contents">text</span>
+                        </div>
+                        <div class="message">
+                            <span class="timestamp">[16:43:02]</span>
+                            <span class="sender">Maldnus Blundersen</span>
+                            <span class="contents"
+                                >a very very very long long text</span
+                            >
+                        </div>
+                    </section>
+                    <section class="message-send">
+                        <textarea id="message-box"></textarea>
+                        <button>Send</button>
+                    </section>
+                </section>
+                <section class="board">
+                    <img src="../img/board.png" />
+                </section>
+                <section class="game-data">
+                    <section class="opponent">
+                        <div id="timer-opponent" class="timer">10:00</div>
+                        <div class="player-banner">
+                            <section class="player-info">
+                                <img src="../img/user-logo.png" />
+                                <section class="user-info">
+                                    <p>Opponent</p>
+                                    <p>9999</p>
+                                </section>
+                            </section>
+                            <button type="button" class="game-data-button">
+                                Add friend
+                            </button>
+                        </div>
+                    </section>
+                    <section class="history">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Move</th>
+                                    <th>White</th>
+                                    <th>Black</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>d4</td>
+                                    <td>e6</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>e4</td>
+                                    <td>d5</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>e5</td>
+                                    <td>c5</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>f4</td>
+                                    <td>Nc6</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>c4</td>
+                                    <td>Qb6</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Qc2</td>
+                                    <td>Nxd4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section class="player">
+                        <div class="player-banner">
+                            <section class="player-info">
+                                <img src="../img/profile-picture.png" />
+                                <section class="user-info">
+                                    <p>Maldnus Blundersen</p>
+                                    <p>700</p>
+                                </section>
+                            </section>
+                            <button type="button" class="game-data-button">
+                                Surrender
+                            </button>
+                        </div>
+                        <div id="timer-opponent" class="timer">10:00</div>
+                    </section>
+                </section>
+            </section>
+        </main>
+        <footer>© 2022 - Chess101</footer>
+    </body>
+</html>
