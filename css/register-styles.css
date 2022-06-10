@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #808a9f;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header img {
+    width: 12rem;
+    height: 9rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    border-bottom: 1px solid #6c9dff;
+    margin-bottom: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    width: 50%;
+}
+
+.options div {
+    width: 100%;
+    text-align: center;
+}
+
+.options a:last-child {
+    color: #888888;
+}
+
+.options a:first-child {
+    font-size: 15pt;
+    color: #6c9dff;
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #6c9dff;
+}
+
+#reg-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#reg-form > *{
+    margin-bottom: 1.3rem;
+}
+
+input {
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    border: 1px solid #888888;
+    color: #888888;
+    width: 50%;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit button {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    background-color: #9bcaff;
+    border: 1px solid #888888;
+    border-radius: 3px;
+    font-size: 13pt;
+    color: white;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+.submit button:hover {
+    background-color: #6d8db3;
+}
