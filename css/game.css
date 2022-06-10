@@ -9,49 +9,63 @@
 
 .board {
     grid-area: "board";
+    display: flex;
+    height: 700px;
+    width: 700px;
+    justify-self: center;
+}
+
+#board {
+    width: 100%;
+    height: 100%;
 }
 
 .chat {
     grid-area: "chat";
-}
-
-.game-data {
-    grid-area: "game-data";
-}
-
-@media screen and (max-width: 1200px) {
-    .game {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "chat" 
-            "board" 
-            "game-data";
-        justify-content: center;
-        height: fit-content;
-        width: 700px;
-    }
-}
-
-.chat {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 300px;
     height: 700px;
-    background-color: #ff0;
+    background-color: #d7c699;
     vertical-align: stretch;
 }
 
+.game-data {
+    grid-area: "game-data";
+    display: flex;
+    flex-direction: column;
+    max-height: 700px;
+}
+
+.button {
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: #af6938;
+    border: 1px solid #888888;
+    border-radius: 3px;
+    font-size: inherit;
+    font-weight: bold;
+    color: #dcd6d1;
+    cursor: pointer;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.button:hover {
+    background-color: #db7151;
+}
+
 #messages {
+    padding: 0 1rem;
     height: 100%;
     width: 100%;
-    background-color: #f0f;
+    background-color: #f8e7bb;
     overflow-y: auto;
     word-wrap: break-word;
 }
 
 .message {
-    border-bottom: 1px solid #000;
+    margin-bottom: 0.5rem;
 }
 
 .timestamp {
@@ -80,24 +94,6 @@
     flex-direction: row;
 }
 
-.board {
-    display: flex;
-    height: 700px;
-    width: 700px;
-    justify-self: center;
-}
-
-#board {
-    width: 100%;
-    height: 100%;
-}
-
-.game-data {
-    display: flex;
-    flex-direction: column;
-    max-height: 700px;
-}
-
 .opponent {
     display: flex;
     flex-direction: column;
@@ -105,8 +101,7 @@
     align-items: flex-start;
     height: 100px;
     width: 100%;
-    background-color: #0f0;
-    border: 1px solid #000;
+    background-color: #d7c699;
     padding: 1rem;
 }
 
@@ -125,6 +120,8 @@
     align-items: center;
     height: 100%;
     width: 100%;
+    font-size: 14pt;
+    padding: 0.5rem;
 }
 
 .player-info img {
@@ -151,13 +148,13 @@
 }
 
 .timer::before {
-    content: '⏱';
+    content: "⏱";
 }
 
 .history {
     flex-grow: 1;
     width: 100%;
-    background-color: #fa0;
+    background-color: #f8e7bb;
     overflow-y: auto;
 }
 
@@ -177,8 +174,7 @@ th:nth-child(1) {
     align-items: flex-start;
     height: 100px;
     width: 100%;
-    background-color: #0f0;
-    border: 1px solid #000;
+    background-color: #d7c699;
     padding: 1rem;
 }
 
@@ -193,18 +189,30 @@ th:nth-child(1) {
 }
 
 .timer {
-    background-color: #00f;
+    background-color: inherit;
     font-weight: bold;
     align-self: center;
-    font-size: 18pt;
+    font-size: 16pt;
 }
 
 .timer::before {
-    content: '⏱';
+    content: "⏱";
 }
 
-.game-data-button {
-    display: flex;
-    justify-self: flex-end;
-    width: fit-content;
+@media screen and (max-width: 1600px) {
+    .game {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "chat"
+            "board"
+            "game-data";
+        justify-content: center;
+        height: fit-content;
+        width: 700px;
+    }
+
+    .chat,
+    .board {
+        margin-bottom: 2rem;
+    }
 }

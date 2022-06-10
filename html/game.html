@@ -14,6 +14,12 @@
                 <img src="../img/logo.png" alt="Chess 101" />
             </a>
             <div class="rightSide">
+                <div>
+                    <a href="./frontPage.html" class="logo">
+                        <img src="../img/lobbies.svg" alt="Lobbies" />
+                    </a>
+                    <span>LOBBIES</span>
+                </div>
                 <div class="profile">
                     <a href="../html/user-data.html" class="logo">
                         <img src="../img/profile.png" alt="Profile" />
@@ -33,22 +39,10 @@
                 <section class="chat">
                     <h1>CHAT</h1>
                     <section id="messages">
-                        <div class="message">
-                            <span class="timestamp">[16:43:02]</span>
-                            <span class="sender">Opponent</span>
-                            <span class="contents">text</span>
-                        </div>
-                        <div class="message">
-                            <span class="timestamp">[16:43:02]</span>
-                            <span class="sender">Maldnus Blundersen</span>
-                            <span class="contents"
-                                >a very very very long long text</span
-                            >
-                        </div>
                     </section>
                     <section class="message-send">
                         <textarea id="message-box"></textarea>
-                        <button>Send</button>
+                        <button type="button" class="button">Send</button>
                     </section>
                 </section>
                 <section class="board">
@@ -65,7 +59,7 @@
                                     <p>9999</p>
                                 </section>
                             </section>
-                            <button type="button" class="game-data-button">
+                            <button type="button" class="button">
                                 Add friend
                             </button>
                         </div>
@@ -79,38 +73,7 @@
                                     <th>Black</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>d4</td>
-                                    <td>e6</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>e4</td>
-                                    <td>d5</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>e5</td>
-                                    <td>c5</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>f4</td>
-                                    <td>Nc6</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>c4</td>
-                                    <td>Qb6</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>Qc2</td>
-                                    <td>Nxd4</td>
-                                </tr>
-                            </tbody>
+                            <tbody></tbody>
                         </table>
                     </section>
                     <section class="player">
@@ -122,7 +85,7 @@
                                     <p>700</p>
                                 </section>
                             </section>
-                            <button type="button" class="game-data-button">
+                            <button type="button" class="button">
                                 Surrender
                             </button>
                         </div>
@@ -131,6 +94,30 @@
                 </section>
             </section>
         </main>
+        <script>
+            let history = document.querySelector(".history tbody");
+            let chat = document.getElementById("messages");
+            for (let i = 1; i < 50; i++) {
+                let tr = document.createElement("tr");
+                tr.innerHTML = `
+                    <td>${i}</td>
+                    <td>Qc2</td>
+                    <td>Nxd4</td>
+                `;
+                history.appendChild(tr);
+
+                let div = document.createElement('div');
+                div.innerHTML = `
+                    <div class="message">
+                        <span class="timestamp">[16:43:02]</span>
+                        <span class="sender">Opponent</span>
+                        <span class="contents">text</span>
+                    </div>
+                `;
+
+                chat.appendChild(div.querySelector('.message'));
+            }
+        </script>
         <footer>© 2022 - Chess101</footer>
     </body>
 </html>
