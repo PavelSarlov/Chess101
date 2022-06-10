@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Account - User Data</title>
+        <title>Профил - Основна информация</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../css/global.css" />
         <link rel="stylesheet" href="../css/header.css" />
@@ -11,27 +11,27 @@
     </head>
     <body>
         <header>
-            <a href="../html/frontPage.html" class="logo">
+            <a href="./frontPage-bg.html" class="logo">
                 <img src="../img/logo.png" alt="Chess 101" />
             </a>
             <div class="rightSide">
                 <div>
-                    <a href="./frontPage.html" class="logo">
+                    <a href="./frontPage-bg.html" class="logo">
                         <img src="../img/lobbies.svg" alt="Lobbies" />
                     </a>
-                    <span>LOBBIES</span>
+                    <span>ЛОБИТА</span>
                 </div>
                 <div class="profile">
-                    <a href="../html/user-data.html" class="logo">
+                    <a href="./user-data-bg.html" class="logo">
                         <img src="../img/profile.png" alt="Profile" />
                     </a>
-                    <span>PROFILE</span>
+                    <span>ПРОФИЛ</span>
                 </div>
                 <div class="logout">
-                    <a href="../html/login.html" class="logo">
+                    <a href="./login-bg.html" class="logo">
                         <img src="../img/logout.png" alt="Log out" />
                     </a>
-                    <span>LOGOUT</span>
+                    <span>ИЗХОД</span>
                 </div>
             </div>
         </header>
@@ -41,18 +41,18 @@
                     <a
                         class="nav-button active"
                         id="btn-user-data"
-                        href="./user-data.html"
-                        >General Information</a
+                        href="./user-data-bg.html"
+                        >Основна информация</a
                     >
                     <a
                         class="nav-button"
                         id="btn-change-password"
-                        href="./change-password.html"
-                        >Change Password</a
+                        href="./change-password-bg.html"
+                        >Смяна на парола</a
                     >
                 </section>
                 <section class="options-panel">
-                    <h1>General Information</h1>
+                    <h1>Основна информация</h1>
                     <section class="gen-info">
                         <section class="user-info">
                             <div class="profile-picture">
@@ -65,7 +65,7 @@
                                     id="upload-picture"
                                     class="button"
                                 >
-                                    Upload picture
+                                    Качи снимка
                                 </button>
                             </div>
                             <section class="field" style="width: 50%">
@@ -76,15 +76,15 @@
                                     placeholder=" "
                                     class="input"
                                 />
-                                <label for="username">Username</label>
+                                <label for="username">Потребителско име</label>
                             </section>
                             <section class="user-stats">
                                 <div class="stats-field">
-                                    <label>Rank:</label>
+                                    <label>Ранг:</label>
                                     <div>700</div>
                                 </div>
                                 <div class="stats-field">
-                                    <label>Games played:</label>
+                                    <label>Изиграни игри:</label>
                                     <div>9999</div>
                                 </div>
                             </section>
@@ -98,7 +98,7 @@
                                     placeholder=" "
                                     class="input"
                                 />
-                                <label for="name">Name</label>
+                                <label for="name">Име</label>
                             </section>
                             <section class="field">
                                 <input
@@ -108,7 +108,7 @@
                                     placeholder=" "
                                     class="input"
                                 />
-                                <label for="surname">Surname</label>
+                                <label for="surname">Фамилия</label>
                             </section>
                             <section class="field">
                                 <input
@@ -118,23 +118,25 @@
                                     placeholder=" "
                                     class="input"
                                 />
-                                <label for="date-of-birth">Date of birth</label>
+                                <label for="date-of-birth"
+                                    >Дата на раждане</label
+                                >
                             </section>
                             <section class="field">
                                 <textarea type="text" id="bio" class="input">
 Lorem ipsum</textarea
                                 >
-                                <label for="bio">Biography</label>
+                                <label for="bio">Биография</label>
                             </section>
                         </section>
                     </section>
                     <button id="btn-save" type="button" class="button">
-                        Save changes
+                        Запази
                     </button>
                 </section>
             </section>
         </main>
-        <a href="./user-data-bg.html" class="flag flag-bg"></a>
+        <a href="./user-data.html" class="flag flag-gb"></a>
         <footer>© 2022 - Chess101</footer>
     </body>
 </html>

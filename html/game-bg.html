@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Game</title>
+        <title>Account - User Data</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../css/header.css" />
         <link rel="stylesheet" href="../css/global.css" />
@@ -10,39 +10,39 @@
     </head>
     <body>
         <header>
-            <a href="../html/frontPage.html" class="logo">
+            <a href="./frontPage-bg.html" class="logo">
                 <img src="../img/logo.png" alt="Chess 101" />
             </a>
             <div class="rightSide">
                 <div>
-                    <a href="./frontPage.html" class="logo">
+                    <a href="./frontPage-bg.html" class="logo">
                         <img src="../img/lobbies.svg" alt="Lobbies" />
                     </a>
-                    <span>LOBBIES</span>
+                    <span>ЛОБИТА</span>
                 </div>
                 <div class="profile">
-                    <a href="../html/user-data.html" class="logo">
+                    <a href="./user-data-bg.html" class="logo">
                         <img src="../img/profile.png" alt="Profile" />
                     </a>
-                    <span>PROFILE</span>
+                    <span>ПРОФИЛ</span>
                 </div>
                 <div class="logout">
-                    <a href="../html/login.html" class="logo">
+                    <a href="./login-bg.html" class="logo">
                         <img src="../img/logout.png" alt="Log out" />
                     </a>
-                    <span>LOGOUT</span>
+                    <span>ИЗХОД</span>
                 </div>
             </div>
         </header>
         <main>
             <section class="game">
                 <section class="chat">
-                    <h1>CHAT</h1>
+                    <h1>ЧАТ</h1>
                     <section id="messages">
                     </section>
                     <section class="message-send">
                         <textarea id="message-box"></textarea>
-                        <button type="button" class="button">Send</button>
+                        <button type="button" class="button">Изпрати</button>
                     </section>
                 </section>
                 <section class="board">
@@ -60,7 +60,7 @@
                                 </section>
                             </section>
                             <button type="button" class="button">
-                                Add friend
+                                Добави приятел
                             </button>
                         </div>
                     </section>
@@ -68,9 +68,9 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Move</th>
-                                    <th>White</th>
-                                    <th>Black</th>
+                                    <th>Ход</th>
+                                    <th>Бели</th>
+                                    <th>Черни</th>
                                 </tr>
                             </thead>
                             <tbody></tbody>
@@ -86,7 +86,7 @@
                                 </section>
                             </section>
                             <button type="button" class="button">
-                                Surrender
+                                Предай се
                             </button>
                         </div>
                         <div id="timer-opponent" class="timer">10:00</div>
@@ -118,7 +118,7 @@
                 chat.appendChild(div.querySelector('.message'));
             }
         </script>
-        <a href="./game-bg.html" class="flag flag-bg"></a>
+        <a href="./game.html" class="flag flag-gb"></a>
         <footer>© 2022 - Chess101</footer>
     </body>
 </html>

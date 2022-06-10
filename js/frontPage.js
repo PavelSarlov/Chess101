@@ -29,7 +29,9 @@
     function popFilter() {
         let filter = document.createElement("div");
         filter.classList.add("filter");
-        filter.innerHTML = `
+
+        if (document.querySelector(".flag-bg")) {
+            filter.innerHTML = `
             <section class="field">
                 <label>Maximum rating</label>
                 <select id="maximum-rating-select">
@@ -68,7 +70,49 @@
                 </section>
             </section>
             <button id="save-button" type="button" class="button">Save</button>
-        `;
+            `;
+        } else {
+            filter.innerHTML = `
+            <section class="field">
+                <label>Максимален рейтинг</label>
+                <select id="maximum-rating-select">
+                </select>
+            </section class="field">
+            <section class="field">
+                <label>Минимален рейтинг</label>
+                <select id="minimum-rating-select">
+                </select>
+            </section class="field">
+            <section class="field">
+                <label>Форма на игра</label>
+                <select id="mode-select">
+                </select>
+            </section>
+            <section class="field">
+                <label>Времеви формат</label>
+                <select id="time-format-select">
+                </select>
+            </section class="field">
+            <section class="starts-with-radio">
+                <label>Започва с:</label>
+                <section class="starts-with-radio-btns">
+                    <div class="radio">
+                        <label for="starts-with-white" for="starts-with"><img src="../img/wK.svg"></label>
+                        <input id="starts-with-white" type="radio" name="starts-with" value="white">
+                    </div>
+                    <div class="radio">
+                        <label for="starts-with-whichever" for="starts-with"><img src="../img/wbK.svg"></label>
+                        <input id="starts-with-whichever" type="radio" name="starts-with" value="whichever">
+                    </div>
+                    <div class="radio">
+                        <label for="starts-with-black"><img src="../img/bK.svg"></label>
+                        <input id="starts-with-black" type="radio" name="starts-with" value="black">
+                    </div>
+                </section>
+            </section>
+            <button id="save-button" type="button" class="button">Обнови</button>
+            `;
+        }
 
         let ratings = filter.querySelector("#maximum-rating-select");
         for (let rating of filterRatings) {
@@ -117,7 +161,8 @@
 
     function popCreateLobby() {
         let wrapper = document.createElement("div");
-        wrapper.innerHTML = `
+        if (document.querySelector(".flag-bg")) {
+            wrapper.innerHTML = `
             <div id="wrapper" class="wrapper">
                 <section class="createLobby">
                     <header>Create a Lobby</header>
@@ -154,7 +199,47 @@
                     </div>
                 </section>
             </div>
-        `;
+            `;
+        } else {
+            wrapper.innerHTML = `
+            <div id="wrapper" class="wrapper">
+                <section class="createLobby">
+                    <header>Създай лоби</header>
+                    <section class="field">
+                        <label>Времеви формат</label>
+                        <select id="time-format-select">
+                        </select>
+                    </section class="field">
+                    <section class="field">
+                        <label>Формат на игра</label>
+                        <select id="mode-select">
+                        </select>
+                    </section class="field">
+                    <section class="starts-with-radio">
+                        <label>Започни с:</label>
+                        <section class="starts-with-radio-btns">
+                            <div class="radio">
+                                <label for="starts-with-white" for="starts-with"><img src="../img/wK.svg"></label>
+                                <input id="starts-with-white" type="radio" name="starts-with" value="white">
+                            </div>
+                            <div class="radio">
+                                <label for="starts-with-whichever" for="starts-with"><img src="../img/wbK.svg"></label>
+                                <input id="starts-with-whichever" type="radio" name="starts-with" value="whichever">
+                            </div>
+                            <div class="radio">
+                                <label for="starts-with-black"><img src="../img/bK.svg"></label>
+                                <input id="starts-with-black" type="radio" name="starts-with" value="black">
+                            </div>
+                        </section>
+                    </section>
+                    <div>
+                        <button type="button" id="create" class="button">Създай</button>
+                        <button type="button" id="cancel" class="button">Отказ</button>
+                    </div>
+                </section>
+            </div>
+            `;
+        }
         let createLobby = wrapper.children[0];
 
         let modes = createLobby.querySelector("#mode-select");
@@ -183,7 +268,11 @@
         );
 
         createLobby.querySelector("#create").addEventListener("click", () => {
-            window.location = "../html/game.html";
+            if (document.querySelector("flag-bg")) {
+                window.location = "../html/game.html";
+            } else {
+                window.location = "../html/game-bg.html";
+            }
         });
         createLobby.querySelector("#cancel").addEventListener("click", () => {
             if (createLobby.parentNode) {
@@ -224,6 +313,6 @@
         </a>
         `;
 
-        table.appendChild(row.querySelector('a'));
+        table.appendChild(row.querySelector("a"));
     }
 })();

@@ -246,9 +246,12 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    font-weight: bold;
     margin: 0 1rem 1rem 1rem;
     width: 100%;
+}
+
+.createLobby label {
+    font-weight: bold;
 }
 
 select {
