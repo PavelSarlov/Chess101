@@ -187,6 +187,10 @@ h1 {
     width: 50%;
 }
 
+.change-password-form .field:last-child {
+    margin-bottom: 5rem;
+}
+
 #upload-picture {
     opacity: 0;
     position: absolute;
