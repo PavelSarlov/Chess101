@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Профил - Основна информация</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../css/global.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/account.css" />
+        <script src="../js/lobbies.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="./frontPage-bg.html" class="logo">
+                <img src="../img/logo.png" alt="Chess 101" />
+            </a>
+            <div class="rightSide">
+                <div>
+                    <a href="./frontPage-bg.html" class="logo">
+                        <img src="../img/lobbies.svg" alt="Lobbies" />
+                    </a>
+                    <span>ЛОБИТА</span>
+                </div>
+                <div class="profile">
+                    <a href="./user-data-bg.html" class="logo">
+                        <img src="../img/profile.png" alt="Profile" />
+                    </a>
+                    <span>ПРОФИЛ</span>
+                </div>
+                <div class="logout">
+                    <a href="./login-bg.html" class="logo">
+                        <img src="../img/logout.png" alt="Log out" />
+                    </a>
+                    <span>ИЗХОД</span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="account">
+                <section class="sidebar-nav">
+                    <a
+                        class="nav-button active"
+                        id="btn-user-data"
+                        href="./user-data-bg.html"
+                        >Основна информация</a
+                    >
+                    <a
+                        class="nav-button"
+                        id="btn-change-password"
+                        href="./change-password-bg.html"
+                        >Смяна на парола</a
+                    >
+                </section>
+                <section class="options-panel">
+                    <h1>Основна информация</h1>
+                    <section class="gen-info">
+                        <section class="user-info">
+                            <div class="profile-picture">
+                                <img
+                                    src="../img/profile-picture.png"
+                                    alt="Profile picture"
+                                />
+                                <button
+                                    type="button"
+                                    id="upload-picture"
+                                    class="button"
+                                >
+                                    Качи снимка
+                                </button>
+                            </div>
+                            <section class="field" style="width: 50%">
+                                <input
+                                    type="text"
+                                    id="username"
+                                    value="maldblunder"
+                                    placeholder=" "
+                                    class="input"
+                                />
+                                <label for="username">Потребителско име</label>
+                            </section>
+                            <section class="user-stats">
+                                <div class="stats-field">
+                                    <label>Ранг:</label>
+                                    <div>700</div>
+                                </div>
+                                <div class="stats-field">
+                                    <label>Изиграни игри:</label>
+                                    <div>9999</div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="user-info info">
+                            <section class="field">
+                                <input
+                                    type="text"
+                                    id="name"
+                                    value="Maldnus"
+                                    placeholder=" "
+                                    class="input"
+                                />
+                                <label for="name">Име</label>
+                            </section>
+                            <section class="field">
+                                <input
+                                    type="text"
+                                    id="surname"
+                                    value="Blundersen"
+                                    placeholder=" "
+                                    class="input"
+                                />
+                                <label for="surname">Фамилия</label>
+                            </section>
+                            <section class="field">
+                                <input
+                                    type="date"
+                                    id="date-of-birth"
+                                    value="2022-12-12"
+                                    placeholder=" "
+                                    class="input"
+                                />
+                                <label for="date-of-birth"
+                                    >Дата на раждане</label
+                                >
+                            </section>
+                            <section class="field">
+                                <textarea type="text" id="bio" class="input">
+Lorem ipsum</textarea
+                                >
+                                <label for="bio">Биография</label>
+                            </section>
+                        </section>
+                    </section>
+                    <button id="btn-save" type="button" class="button">
+                        Запази
+                    </button>
+                </section>
+            </section>
+        </main>
+        <a href="./user-data.html" class="flag flag-gb"></a>
+        <footer>© 2022 - Chess101</footer>
+    </body>
+</html>

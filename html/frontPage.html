@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/frontPage.css" />
+        <link rel="stylesheet" href="../css/global.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <script defer src="../js/frontPage.js"></script>
+        <title>Front page</title>
+    </head>
+    <body>
+        <header>
+            <a href="./frontPage.html" class="logo">
+                <img src="../img/logo.png" alt="Chess 101" />
+            </a>
+            <div class="rightSide">
+                <div>
+                    <a href="./frontPage.html" class="logo">
+                        <img src="../img/lobbies.svg" alt="Lobbies" />
+                    </a>
+                    <span>LOBBIES</span>
+                </div>
+                <div class="profile">
+                    <a href="./user-data.html" class="logo">
+                        <img src="../img/profile.png" alt="Profile" />
+                    </a>
+                    <span>PROFILE</span>
+                </div>
+                <div class="logout">
+                    <a href="./login.html" class="logo">
+                        <img src="../img/logout.png" alt="Log out" />
+                    </a>
+                    <span>LOGOUT</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="lobbies">
+                <header>
+                    LOBBIES
+                    <div class="filter-btns">
+                        <button type="button" id="settings">
+                            <img src="../img/filter.svg" alt="Settings" />
+                        </button>
+                    </div>
+                </header>
+
+                <div class="table">
+                    <div class="head">
+                        <div>Opponent</div>
+                        <div>Time format</div>
+                        <div>Mode</div>
+                        <div>Pieces</div>
+                    </div>
+                </div>
+
+                <div class="gameOptions">
+                    <button id="createLobby" class="button">
+                        Create a Lobby
+                    </button>
+                    <div class="gameCode">
+                        <section class="field">
+                            <input
+                                name="code"
+                                id="code"
+                                type="text"
+                                placeholder=" "
+                                class="input"
+                                required
+                            />
+                            <label for="code">Enter game code</label>
+                        </section>
+                        <div>
+                            <a href="./game.html" class="button">Play</a>
+                            <a href="./game.html" class="button">Spectate</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="friends">
+                <header>FRIENDS</header>
+                <section class="friends-list">
+                    <a class="friend" href="">
+                        <img src="../img/profile.png" alt="Profile" />
+                        <div class="data">
+                            <span class="username">someguy</span>
+                            <div class="status">
+                                <span class="circle"></span>
+                                <span>online</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="friend" href="">
+                        <img src="../img/profile.png" alt="Profile" />
+                        <div class="data">
+                            <span class="username">someguy</span>
+                            <div class="status">
+                                <span class="circle"></span>
+                                <span>online</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="friend" href="">
+                        <img src="../img/profile.png" alt="Profile" />
+                        <div class="data">
+                            <span class="username">someguy</span>
+                            <div class="status">
+                                <span class="circle"></span>
+                                <span>online</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="friend" href="">
+                        <img src="../img/profile.png" alt="Profile" />
+                        <div class="data">
+                            <span class="username">someguy</span>
+                            <div class="status">
+                                <span class="circle"></span>
+                                <span>online</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="friend" href="">
+                        <img src="../img/profile.png" alt="Profile" />
+                        <div class="data">
+                            <span class="username">someguy</span>
+                            <div class="status">
+                                <span class="circle"></span>
+                                <span>online</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="friend" href="">
+                        <img src="../img/profile.png" alt="Profile" />
+                        <div class="data">
+                            <span class="username">someguy</span>
+                            <div class="status">
+                                <span class="circle"></span>
+                                <span>online</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="friend" href="">
+                        <img src="../img/profile.png" alt="Profile" />
+                        <div class="data">
+                            <span class="username">someguy</span>
+                            <div class="status">
+                                <span class="circle"></span>
+                                <span>online</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="friend" href="">
+                        <img src="../img/profile.png" alt="Profile" />
+                        <div class="data">
+                            <span class="username">someguy</span>
+                            <div class="status">
+                                <span class="circle"></span>
+                                <span>online</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="friend" href="">
+                        <img src="../img/profile.png" alt="Profile" />
+                        <div class="data">
+                            <span class="username">someguy</span>
+                            <div class="status">
+                                <span class="circle"></span>
+                                <span>online</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="friend" href="">
+                        <img src="../img/profile.png" alt="Profile" />
+                        <div class="data">
+                            <span class="username">someguy</span>
+                            <div class="status">
+                                <span class="circle"></span>
+                                <span>online</span>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+                <section class="add-friend">
+                    <input
+                        type="text"
+                        id="add-friend-username"
+                        placeholder=" "
+                        class="input"
+                    />
+                    <label for="add-friend-username">Username</label>
+                    <button type="button" class="button">Add</button>
+                </section>
+            </section>
+        </main>
+        <a href="./frontPage-bg.html" class="flag flag-bg"></a>
+        <footer>© 2022 - Chess101</footer>
+    </body>
+</html>
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/global.css" />
+        <link rel="stylesheet" href="../css/register.css" />
+        <script defer src="../js/register.js"></script>
+        <title>Регистрация</title>
+    </head>
+    <body>
+        <main>
+            <section class="register">
+                <header>
+                    <img src="../img/logo.png" alt="Chess 101" />
+                    <div class="options">
+                        <a href="">
+                            <div>Регистрирация</div>
+                        </a>
+                        <a href="./login-bg.html">
+                            <div>Вход</div>
+                        </a>
+                    </div>
+                </header>
+                <form id="reg-form">
+                    <section class="field">
+                        <input
+                            name="username"
+                            id="username"
+                            type="text"
+                            placeholder=" "
+                            class="input"
+                            required
+                        />
+                        <label for="username">Потребителско име</label>
+                    </section>
+                    <section class="field">
+                        <input
+                            name="email"
+                            id="email"
+                            type="email"
+                            placeholder=" "
+                            class="input"
+                            required
+                        />
+                        <label for="email">Емайл</label>
+                    </section>
+                    <section class="field">
+                        <input
+                            name="password"
+                            id="password"
+                            type="password"
+                            placeholder=" "
+                            class="input"
+                            required
+                        />
+                        <label for="password">Парола</label>
+                    </section>
+                    <section class="field">
+                        <input
+                            name="repeated-password"
+                            id="repeated-password"
+                            type="password"
+                            placeholder=" "
+                            class="input"
+                            required
+                        />
+                        <label for="repeated-password">Повтори парола</label>
+                    </section>
+                    <div class="submit">
+                        <button type="button" class="button">Регистрирай ме</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <a href="./register.html" class="flag flag-gb"></a>
+        <footer>© 2022 - Chess101</footer>
+    </body>
+</html>

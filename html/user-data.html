@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Account - User Data</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../css/global.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/account.css" />
+        <script src="../js/lobbies.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="../html/frontPage.html" class="logo">
+                <img src="../img/logo.png" alt="Chess 101" />
+            </a>
+            <div class="rightSide">
+                <div>
+                    <a href="./frontPage.html" class="logo">
+                        <img src="../img/lobbies.svg" alt="Lobbies" />
+                    </a>
+                    <span>LOBBIES</span>
+                </div>
+                <div class="profile">
+                    <a href="../html/user-data.html" class="logo">
+                        <img src="../img/profile.png" alt="Profile" />
+                    </a>
+                    <span>PROFILE</span>
+                </div>
+                <div class="logout">
+                    <a href="../html/login.html" class="logo">
+                        <img src="../img/logout.png" alt="Log out" />
+                    </a>
+                    <span>LOGOUT</span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="account">
+                <section class="sidebar-nav">
+                    <a
+                        class="nav-button active"
+                        id="btn-user-data"
+                        href="./user-data.html"
+                        >General Information</a
+                    >
+                    <a
+                        class="nav-button"
+                        id="btn-change-password"
+                        href="./change-password.html"
+                        >Change Password</a
+                    >
+                </section>
+                <section class="options-panel">
+                    <h1>General Information</h1>
+                    <section class="gen-info">
+                        <section class="user-info">
+                            <div class="profile-picture">
+                                <img
+                                    src="../img/profile-picture.png"
+                                    alt="Profile picture"
+                                />
+                                <button
+                                    type="button"
+                                    id="upload-picture"
+                                    class="button"
+                                >
+                                    Upload picture
+                                </button>
+                            </div>
+                            <section class="field" style="width: 50%">
+                                <input
+                                    type="text"
+                                    id="username"
+                                    value="maldblunder"
+                                    placeholder=" "
+                                    class="input"
+                                />
+                                <label for="username">Username</label>
+                            </section>
+                            <section class="user-stats">
+                                <div class="stats-field">
+                                    <label>Rank:</label>
+                                    <div>700</div>
+                                </div>
+                                <div class="stats-field">
+                                    <label>Games played:</label>
+                                    <div>9999</div>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="user-info info">
+                            <section class="field">
+                                <input
+                                    type="text"
+                                    id="name"
+                                    value="Maldnus"
+                                    placeholder=" "
+                                    class="input"
+                                />
+                                <label for="name">Name</label>
+                            </section>
+                            <section class="field">
+                                <input
+                                    type="text"
+                                    id="surname"
+                                    value="Blundersen"
+                                    placeholder=" "
+                                    class="input"
+                                />
+                                <label for="surname">Surname</label>
+                            </section>
+                            <section class="field">
+                                <input
+                                    type="date"
+                                    id="date-of-birth"
+                                    value="2022-12-12"
+                                    placeholder=" "
+                                    class="input"
+                                />
+                                <label for="date-of-birth">Date of birth</label>
+                            </section>
+                            <section class="field">
+                                <textarea type="text" id="bio" class="input">
+Lorem ipsum</textarea
+                                >
+                                <label for="bio">Biography</label>
+                            </section>
+                        </section>
+                    </section>
+                    <button id="btn-save" type="button" class="button">
+                        Save changes
+                    </button>
+                </section>
+            </section>
+        </main>
+        <a href="./user-data-bg.html" class="flag flag-bg"></a>
+        <footer>© 2022 - Chess101</footer>
+    </body>
+</html>

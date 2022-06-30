@@ -1,0 +1,218 @@
+.game {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "chat board game-data";
+    width: 100%;
+    height: fit-content;
+    padding: 5rem;
+}
+
+.board {
+    grid-area: "board";
+    display: flex;
+    height: 700px;
+    width: 700px;
+    justify-self: center;
+}
+
+#board {
+    width: 100%;
+    height: 100%;
+}
+
+.chat {
+    grid-area: "chat";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    height: 700px;
+    background-color: #d7c699;
+    vertical-align: stretch;
+}
+
+.game-data {
+    grid-area: "game-data";
+    display: flex;
+    flex-direction: column;
+    max-height: 700px;
+}
+
+.button {
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: #af6938;
+    border: 1px solid #888888;
+    border-radius: 3px;
+    font-size: inherit;
+    font-weight: bold;
+    color: #dcd6d1;
+    cursor: pointer;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.button:hover {
+    background-color: #db7151;
+}
+
+#messages {
+    padding: 0 1rem;
+    height: 100%;
+    width: 100%;
+    background-color: #f8e7bb;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.message {
+    margin-bottom: 0.5rem;
+}
+
+.timestamp {
+    margin-right: 0.5rem;
+}
+
+.sender {
+    margin-right: 1rem;
+}
+
+.sender::after {
+    content: ":";
+}
+
+#message-box {
+    margin-right: 1rem;
+    width: 100%;
+    resize: none;
+    overflow-y: auto;
+}
+
+.message-send {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.opponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100px;
+    width: 100%;
+    background-color: #d7c699;
+    padding: 1rem;
+}
+
+.player-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 14pt;
+    padding: 0.5rem;
+}
+
+.player-info img {
+    border-radius: 2rem;
+    width: auto;
+    max-height: 70%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-info p {
+    margin: 0 0.5rem;
+}
+
+.timer {
+    align-self: center;
+    background-color: #00f;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.timer::before {
+    content: "⏱";
+}
+
+.history {
+    flex-grow: 1;
+    width: 100%;
+    background-color: #f8e7bb;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+th:nth-child(1) {
+    width: 20%;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100px;
+    width: 100%;
+    background-color: #d7c699;
+    padding: 1rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-info p {
+    margin: 0 0.5rem;
+}
+
+.timer {
+    background-color: inherit;
+    font-weight: bold;
+    align-self: center;
+    font-size: 16pt;
+}
+
+.timer::before {
+    content: "⏱";
+}
+
+@media screen and (max-width: 1600px) {
+    .game {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "chat"
+            "board"
+            "game-data";
+        justify-content: center;
+        height: fit-content;
+        width: 700px;
+    }
+
+    .chat,
+    .board {
+        margin-bottom: 2rem;
+    }
+}

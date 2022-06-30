@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/global.css" />
+        <link rel="stylesheet" href="../css/login.css" />
+        <script defer src="../js/login.js"></script>
+        <title>Вход</title>
+    </head>
+    <body>
+        <main>
+            <section class="login">
+                <header>
+                    <img src="../img/logo.png" alt="Chess 101" />
+                    <div class="options">
+                        <a href="./register-bg.html">
+                            <div>Регистрация</div>
+                        </a>
+                        <a href="">
+                            <div>Вход</div>
+                        </a>
+                    </div>
+                </header>
+                <form id="login-form">
+                    <section class="field">
+                        <input
+                            name="email"
+                            id="email"
+                            type="email"
+                            placeholder=" "
+                            class="input"
+                            required
+                        />
+                        <label for="email">Имейл</label>
+                    </section>
+                    <section class="field">
+                        <input
+                            name="password"
+                            id="password"
+                            type="password"
+                            placeholder=" "
+                            class="input"
+                            required
+                        />
+                        <label for="password">Парола</label>
+                    </section>
+                    <div class="submit">
+                        <button type="button" class="button">Вход</button>
+                        <a href="./forgottenPassword-bg.html"
+                            >Забравена парола</a
+                        >
+                    </div>
+                </form>
+            </section>
+        </main>
+        <a href="./login.html" class="flag flag-gb"></a>
+        <footer>© 2022 - Chess101</footer>
+    </body>
+</html>

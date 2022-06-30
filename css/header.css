@@ -1,0 +1,34 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 5rem;
+    padding: 0rem 1rem;
+}
+
+.logo img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightSide > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.rightSide img {
+    width: 3rem;
+    height: 3rem;
+}
